@@ -1,0 +1,32 @@
+{
+  "name": "office-connect",
+  "version": "1.0.0",
+  "description": "Real Time Web Application For Office Communication",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karan0005/office-connect.git"
+  },
+  "keywords": [
+    "Real",
+    "Time",
+    "Web",
+    "Application",
+    "Office",
+    "Communication",
+    "System"
+  ],
+  "author": "Karan Gupta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Karan0005/office-connect/issues"
+  },
+  "homepage": "https://github.com/Karan0005/office-connect#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
