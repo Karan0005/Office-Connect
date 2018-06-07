@@ -1,5 +1,5 @@
 export interface ResModel {
-    Status: number;
+    Status: boolean;
     Message: string;
     Data: Object;
 }
