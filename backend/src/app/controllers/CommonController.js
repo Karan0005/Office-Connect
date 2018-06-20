@@ -5,6 +5,7 @@ let AppRoot = global._appRoot;
 
 let path = require('path');
 let WelcomePage = path.join(AppRoot, PathConstants.WebPages.Welcome);
+let ErrorPage = path.join(AppRoot, PathConstants.WebPages.Error);
 
 function getWelcomePage(req, res) {
     res.sendFile(WelcomePage);
