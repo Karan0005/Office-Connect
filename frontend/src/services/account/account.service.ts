@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ApiService } from '../api/api.service';
 import { Observable } from 'rxjs/Observable';
-import { ResModel } from '../../models/base-models/base-res-model';
+import { ResModel } from '../../models/base_res_model';
 
 @Injectable()
 export class AccountService {

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Observable } from 'rxjs/Observable';
-import { ResModel } from '../../models/base-models/base-res-model';
+import { ResModel } from '../../models/base_res_model';
 
 const headerOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
