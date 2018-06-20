@@ -1,6 +1,10 @@
 'use strict'
 
-let express = require('express');
+global._pathConstants = require('./app/constants/path_constant');
+global._appRoot = __dirname;
+
 let path = require('path');
-let path_constants = require('../src/app/constants/path_constant');
-let config = require(path.join(__dirname, path_constants.CONFIG));
+let config = require(path.join(global._appRoot, global._pathConstants.Config));
+
+require('../src/app/routes/routing');
+
