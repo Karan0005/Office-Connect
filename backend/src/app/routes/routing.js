@@ -1,12 +1,15 @@
 'use strict'
 
-let AppControllers = global._pathConstants.AppControllers;
-let AppRoot = global._appRoot;
+const appControllers = global._pathConstants.AppControllers;
+const commonController = require(appControllers.CommonController);
+const authController = require(appControllers.AuthController);
+const express = require('express');
+const Router = new express.Router();
 
-let express = require('express');
-let app = new express();
+'************************** Common Routes **************************'
 
-let path = require('path');
-let CommonController = require(path.join(AppRoot, AppControllers.CommonController));
+Router
+    .route('/')
+    .get(authController.validateToken, authController.validatePermission, commonController.getWelcomePage);
 
-app.get('/', CommonController.getWelcomePage);
+module.exports = Router;

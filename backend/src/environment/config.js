@@ -5,7 +5,7 @@ let production = {
 }
 
 let development = {
-    "PORT" : "80"
+    "PORT" : "8011"
 }
 
 module.exports = {
