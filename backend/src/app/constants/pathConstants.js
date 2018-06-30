@@ -8,6 +8,7 @@ module.exports = {
     "AppControllers": {
         "CommonController": path.join(global._appRoot + "/app/controllers/CommonController"),
         "AuthController": path.join(global._appRoot + "/app/controllers/AuthorizeController"),
+        "AccountController": path.join(global._appRoot + "/app/controllers/AccountController")
     },
 
     "Routes": path.join(global._appRoot + "/app/routes/routing"),
