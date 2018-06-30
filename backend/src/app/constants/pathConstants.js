@@ -22,7 +22,7 @@ module.exports = {
     "BaseResModel": path.join(global._appRoot + "/app/models/baseResModel.js"),
 
     "ReqModels": {
-        "AccountModel": path.join(global._appRoot + "/app/models/req_models/accountModel.js")
+        "AccountModel": path.join(global._appRoot + "/app/models/req-models/accountModel.js")
     },
 
     "ResMessages": path.join(global._appRoot + "/app/constants/resMessages.js"),
