@@ -22,14 +22,14 @@ else if (process.env.PORT !== undefined) {
     app.set('PORT', process.env.PORT);
 }
 else {
-    console.log('Error Occured...');
+    console.log(resMessages.errorMessage);
 }
 
 if (app.get('PORT') != undefined && app.get('PORT') != null && app.get('PORT') != '') {
-    app.listen(app.get("PORT"), () => {
+    app.listen(app.get('PORT'), () => {
 
         /*Printing Success Response*/
-        console.log('Server Got Activated On Port Number ' + app.get('PORT'));
+        console.log(resMessages.serverActivated);
 
         /* Initiating Server Requirements */
         initiateServer();
@@ -37,7 +37,7 @@ if (app.get('PORT') != undefined && app.get('PORT') != null && app.get('PORT') !
     });
 }
 else {
-    console.log('Error Occured...');
+    console.log(resMessages.errorMessage);
 }
 
 function initiateServer() {
