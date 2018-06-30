@@ -23,5 +23,9 @@ module.exports = {
 
     "ReqModels": {
         "AccountModel": path.join(global._appRoot + "/app/models/req_models/accountModel.js")
-    }
+    },
+
+    "ResMessages": path.join(global._appRoot + "/app/constants/resMessages.js"),
+
+    "ResStatus": path.join(global._appRoot + "/app/constants/resStatus.js")
 };
